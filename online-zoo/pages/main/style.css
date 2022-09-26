@@ -7,6 +7,7 @@
 :root{
     --simple-orange: #F9804B;
     --orange: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --dark-orange: #E47209;
     --yellow: #FFEE2E;
     --orange-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -92,4 +93,61 @@ nav{
 
 .designed-by{
     color: white;
+}
+
+/*watch-online*/
+.watch-online{
+    position: relative;
+    height: 700px;
+    background-image: url(../../assets/images/Giant\ Panda.png);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.watch-online-slogan{
+    top: 85px;
+    right: 220px;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+.watch-online-slogan::before{
+    top: -73px;
+    right: 108px;
+    content: "";
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    background: var(--orange);
+    border-radius: 250px;
+    z-index: -1;
+}
+
+.slogan-yellow{
+    color: var(--yellow)
+}
+
+.circle-button{
+    border: 0;
+    bottom: 100px;
+    right: 319px;
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    background: var(--orange);
+    border-radius: 25px;
+    color: white;
+}
+
+.circle-button:hover{
+    background: var(--dark-orange);
+    cursor: pointer;
+}
+
+.circle-button:active{
+    background: var(--green);
 }
