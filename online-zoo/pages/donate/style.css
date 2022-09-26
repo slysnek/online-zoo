@@ -100,6 +100,10 @@ nav{
     gap: 58px;
 }
 
+.donate-navbar{
+    color: #F9804B;
+}
+
 .about-navbar{
     color: var(--simple-orange);
 }
@@ -308,7 +312,7 @@ input[type="radio"]{
     position: absolute;
     width: 30px;
     height: 30px;
-    border: 2px solid orange;
+    border: 2px solid #FE9013;
     border-radius: 16px;
     z-index: 5;
 }
@@ -317,7 +321,7 @@ input[type="radio"]{
     position: absolute;
     width: 50px;
     height: 50px;
-    border: 2px solid orange;
+    border: 2px solid #FE9013;
     border-radius: 32px;
     z-index: 5;
     right: -40px;
