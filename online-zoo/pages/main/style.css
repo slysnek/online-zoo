@@ -67,6 +67,15 @@ header{
     text-align: center;
 }
 
+.header-logo-text:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.header-logo-text > a:hover{
+    color: white;
+}
+
 .logo-bamboo{
     position: absolute;
     bottom: 6px;
@@ -89,6 +98,10 @@ nav{
     align-items: center;
     list-style: none;
     gap: 58px;
+}
+
+.about-navbar{
+    color: var(--simple-orange);
 }
 
 .designed-by{
@@ -237,6 +250,24 @@ nav{
 .animal-photo-wrapper > img {
     width: 366px;
     height: 362px;
+    z-index: 5;
+    transition: transform 0.3s;
+}
+
+.animal-photo-wrapper > img:hover{
+    filter: brightness(50%);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.animal-photo-wrapper > img:hover ~ .animal-photo-text-wrapper{
+    transform: translateY(-60px);
+    color: white;
+}
+
+.animal-photo-text-wrapper:hover{
+    transform: translateY(-60px);
+    color: white;
 }
 
 .animal-photo-text-wrapper{
@@ -245,6 +276,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     padding-left: 16px;
+    transition: 0.3s;
 }
 
 .animal-photo-icon{
@@ -269,6 +301,7 @@ nav{
     background-image: url(../../assets/icons/arrow-left.svg);
     width: 62px;
     height: 62px;
+    cursor: pointer;
 }
 
 .animal-photos-arrow-left:active{
@@ -282,6 +315,7 @@ nav{
     background-image: url(../../assets/icons/arrow-right.svg);
     width: 62px;
     height: 62px;
+    cursor: pointer;
 }
 
 .animal-photos-arrow-right:active{
@@ -314,6 +348,10 @@ nav{
     height: 835px;
     background: rgba(253, 253, 255, 0.52);
     border-radius: 20px;
+}
+
+.emergency-fond{
+    text-decoration: underline #FE9013 2px;
 }
 
 .pick-and-feed-card > h2 {
@@ -378,6 +416,9 @@ nav{
 }
 
 .how-it-works-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
 }
 
@@ -458,6 +499,13 @@ nav{
     width: 115px;
     height: 6px;
     background: #FE9013;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.testimonials-slider-bar-fill:hover{
+    transform: scale(1.05);
+    background: #E47209;
 }
 
 .square-button{
@@ -467,6 +515,15 @@ nav{
     background: var(--orange);
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+}
+
+.square-button:hover{
+    background: #E47209;
+}
+
+.square-button:active{
+    background: var(--green);
 }
 
 .testimonials-button{
@@ -486,6 +543,7 @@ nav{
 footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 443px;
     background-color: black;
     padding-left: 220px;
@@ -500,6 +558,9 @@ footer{
 }
 
 .footer-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 68px;
 }
 
@@ -521,6 +582,10 @@ footer{
     color: white;
 }
 
+.socials-item:hover{
+    transform: scale(1.1);
+}
+
 .footer-center{
     margin-left: 101px;
     margin-right: 32px;
@@ -537,6 +602,10 @@ footer{
     gap: 58px;
 }
 
+.about-footer{
+    color: #E47209;
+}
+
 .footer-right{
     display: flex;
     flex-direction: column;
@@ -549,6 +618,7 @@ footer{
 }
 
 .footer-right input{
+    color: #BDBDBD;
     margin-top: 14px;
     margin-right: 6px;
     outline: none;
@@ -563,6 +633,20 @@ footer{
     background-color: black;
 }
 
+.footer-right input:valid{
+    border: 1px solid var(--green);
+}
+
+.footer-right input:invalid{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.footer-right input:invalid ~ .submit-button{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
 .submit-button{
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -574,6 +658,11 @@ footer{
     border: 1px solid var(--green);
     color: var(--green);
     border-radius: 5px;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .designed-by-footer{
