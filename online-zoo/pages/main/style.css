@@ -384,6 +384,7 @@ nav{
 /*testimonials*/
 
 .testimonials{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -469,4 +470,19 @@ nav{
 .testimonials-button{
     margin-top: 31px;
     align-self: flex-start;
+}
+
+.testimonials-leaf-foto{
+    position: absolute;
+    bottom: -132px;
+    right: 0;
+}
+
+/*footer*/
+
+footer{
+    height: 443px;
+    background-color: black;
+    padding-left: 220px;
+    padding-right: 220px;
 }
