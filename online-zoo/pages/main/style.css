@@ -4,6 +4,42 @@
     padding: 0;
 }
 
+:root{
+    --orange: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --yellow: #FFEE2E;
+    --orange-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --black-blue: #333B41;
+    --green: #4B9200;
+    --frosted-glass-white: rgba(253, 253, 255, 0.52);
+    --gray-light: #F1F3F2;
+    --gray: #767474;
+    --gray-smoky: #ABABAB;
+    --red: #D31414;
+}
+
 body{
     width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+nav{
+    height: 100%;
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
