@@ -160,7 +160,7 @@ nav{
     align-items: flex-start;
     margin-top: 140px;
     padding-left: 220px;
-    padding-right: 210px;
+    padding-right: 200px;
     gap: 87px;
 }
 
@@ -187,4 +187,27 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 31px;
+}
+
+/*animals-photos*/
+
+.animals-photos{
+    margin-top: 180px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.animals-photos-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.animal-photo{
+    width: 360px;
+    height: 426px;
+    border: 1px solid orange;
 }
