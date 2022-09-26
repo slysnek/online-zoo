@@ -151,3 +151,40 @@ nav{
 .circle-button:active{
     background: var(--green);
 }
+/*backstage*/
+
+.backstage{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 140px;
+    padding-left: 220px;
+    padding-right: 210px;
+    gap: 87px;
+}
+
+.backstage-flower-photo{
+    position: absolute;
+    right: 0;
+    top: -128px;
+}
+
+.backstage-text{
+    display: flex;
+    flex-direction: column;
+    width: 465px;
+    gap: 54px;
+}
+
+.backstage-text-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.backstage-text-2{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
