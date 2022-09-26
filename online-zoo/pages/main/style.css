@@ -176,6 +176,7 @@ nav{
 }
 
 .backstage-text{
+    color: var(--black-blue);
     display: flex;
     flex-direction: column;
     width: 465px;
@@ -204,7 +205,7 @@ nav{
     margin-top: 180px;
     padding-left: 220px;
     padding-right: 220px;
-    padding-bottom: 100px;
+    padding-bottom: 98px;
 }
 
 .animals-photos-flower{
@@ -285,4 +286,97 @@ nav{
 
 .animal-photos-arrow-right:active{
     background-image: url(../../assets/icons/arrow-right-active.svg);
+}
+
+/*pick-and-feed*/
+.pick-and-feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 71px;
+    padding-bottom: 100px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+}
+
+.pick-and-feed-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 59px;
+    width: 100%;
+    height: 835px;
+    background: rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+}
+
+.pick-and-feed-card > h2 {
+    color: #FE9013;
+}
+
+.pick-and-feed-card > h3 {
+    margin-top: 57px;
+    margin-bottom: 40px;
+    color: var(--black-blue);
+}
+
+.pick-and-feed-card p{
+    align-self: flex-start;
+    color: var(--black-blue);
+}
+
+.pick-and-feed-card > p.subtitle{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 106%;
+}
+
+.pick-and-feed-card > p.body-button{
+    width: 106%;
+    margin-bottom: 7px;
+}
+
+.pick-and-feed-card-sup-fund{
+    width: 90%;
+}
+
+.how-it-works-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.how-it-works-item{
+    display: flex;
+    flex-direction: column;
+    width: 168px;
+    gap: 30px;
+}
+
+.how-it-works-item-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF;
+    border: 1px solid var(--simple-orange);
+    border-radius: 5px;
+}
+
+.how-it-works-arrow{
+    margin-top: 59px;
+    background-image: url(../../assets/icons/how-it-works-arrow.svg);
+    width: 69px;
+    height: 36px;
+}
+
+.how-it-works-button{
+    margin-top: 60px;
 }
