@@ -67,6 +67,15 @@ header{
     text-align: center;
 }
 
+.header-logo-text:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.header-logo-text > a:hover{
+    color: white;
+}
+
 .logo-bamboo{
     position: absolute;
     bottom: 6px;
@@ -89,6 +98,10 @@ nav{
     align-items: center;
     list-style: none;
     gap: 58px;
+}
+
+.about-navbar{
+    color: var(--simple-orange);
 }
 
 .designed-by{
@@ -355,6 +368,7 @@ input[type="number"]{
 footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 443px;
     background-color: black;
     padding-left: 220px;
@@ -368,6 +382,13 @@ footer{
     flex-direction: column;
 }
 
+.footer-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
+
 .square-button{
     border: 0;
     width: 298px;
@@ -375,11 +396,18 @@ footer{
     background: var(--orange);
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
-.footer-button{
-    margin-top: 68px;
+.square-button:hover{
+    background: #E47209;
+    color: white;
 }
+
+.square-button:active{
+    background: var(--green);
+}
+
 
 .socials-wrapper{
     display: flex;
@@ -399,6 +427,10 @@ footer{
     color: white;
 }
 
+.socials-item:hover{
+    transform: scale(1.1);
+}
+
 .footer-center{
     margin-left: 101px;
     margin-right: 32px;
@@ -415,6 +447,10 @@ footer{
     gap: 58px;
 }
 
+.about-footer{
+    color: #E47209;
+}
+
 .footer-right{
     display: flex;
     flex-direction: column;
@@ -427,6 +463,7 @@ footer{
 }
 
 .footer-right input{
+    color: #BDBDBD;
     margin-top: 14px;
     margin-right: 6px;
     outline: none;
@@ -441,6 +478,20 @@ footer{
     background-color: black;
 }
 
+.footer-right input:valid{
+    border: 1px solid var(--green);
+}
+
+.footer-right input:invalid{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.footer-right input:invalid ~ .submit-button{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
 .submit-button{
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -452,6 +503,11 @@ footer{
     border: 1px solid var(--green);
     color: var(--green);
     border-radius: 5px;
+}
+
+.submit-button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .designed-by-footer{

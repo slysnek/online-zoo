@@ -520,6 +520,7 @@ nav{
 
 .square-button:hover{
     background: #E47209;
+    color: white;
 }
 
 .square-button:active{
