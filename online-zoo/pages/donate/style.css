@@ -257,6 +257,7 @@ nav{
 
 .amount{
     margin-top: 48px;
+    align-self: flex-start;
 }
 
 .donate-selector-body{
@@ -273,7 +274,7 @@ nav{
     background: #404950;
 }
 
-.donate-selector-body > input[type="radio"]{
+.pseudo-circle > input[type="radio"]{
     z-index: 3;
     appearance: none;
     background-color: #FFEE2E;
@@ -281,6 +282,54 @@ nav{
     width: 10px;
     height: 10px;
     transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    position: relative;
+    cursor: pointer;
+}
+
+.pseudo-circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pseudo-inner-circles-wrapper{
+    display: none;
+    position: relative;
+    top: -15px;
+    right: 20px;
+}
+
+.pseudo-inner-circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    border-radius: 16px;
+    z-index: 5;
+}
+
+.pseudo-inner-circle-2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid orange;
+    border-radius: 32px;
+    z-index: 5;
+    right: -40px;
+    bottom: -40px;
+}
+
+input[type="radio"]:checked{
+    background-color: green;
+}
+
+input[type="radio"]:checked + .pseudo-inner-circles-wrapper{
+    display: initial;
 }
 
 input[type="number"]{
@@ -297,27 +346,40 @@ input[type="number"]{
     background-color: transparent;
 }
 
-  input:checked {
-    border: 6px solid black;
-  }
-
 .donate-line{
     position: absolute;
     height: 2px;
     background: #72828E;
     width: 915px;
     top: 12px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .donate-selector-money{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 93%;
     font-weight: 600;
     font-size: 26px;
     line-height: 140%;
+    gap: 5px;
+    margin-right: 70px;
+}
+
+.donate-money-wrapper{
+    position: relative;
+}
+
+.donate-money{
+    position: absolute;
+    bottom: -48px;
+    padding-top: 50px;
+}
+
+.donate-money:checked{
+    color: var(--simple-orange);
 }
 
 .donate-button{
@@ -335,11 +397,32 @@ input[type="number"]{
     flex-direction: column;
 }
 
+.input-wrapper{
+    margin-top: 36px;
+    position: relative;
+}
+
+.dollar{
+    position: absolute;
+    right: 9px;
+    bottom: 19px;
+}
+
+.custom-amount:invalid{
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.custom-amount:valid{
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
 .radio-buttons-wrapper{
     margin-top: 27px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -356,7 +439,8 @@ input[type="number"]{
 .radio-buttons{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 22px;
 }
 
 .radio-buttons input{
