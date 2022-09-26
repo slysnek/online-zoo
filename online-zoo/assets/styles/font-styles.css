@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 114px;
+    line-height: 80%;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.subtitle{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.body-button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.small-p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+}
