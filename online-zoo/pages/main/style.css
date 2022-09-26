@@ -133,9 +133,6 @@ nav{
 
 .circle-button{
     border: 0;
-    bottom: 100px;
-    right: 319px;
-    position: absolute;
     width: 298px;
     height: 54px;
     background: var(--orange);
@@ -151,6 +148,12 @@ nav{
 .circle-button:active{
     background: var(--green);
 }
+
+.circle-button-watch{
+    bottom: 100px;
+    right: 319px;
+    position: absolute;
+}
 /*backstage*/
 
 .backstage{
@@ -158,10 +161,12 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    /*justify-content: center;*/
     margin-top: 140px;
     padding-left: 220px;
     padding-right: 200px;
     gap: 87px;
+    flex-wrap: wrap;
 }
 
 .backstage-flower-photo{
@@ -192,22 +197,92 @@ nav{
 /*animals-photos*/
 
 .animals-photos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 180px;
     padding-left: 220px;
     padding-right: 220px;
+    padding-bottom: 100px;
+}
+
+.animals-photos-flower{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.animals-photos-flower-2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
 .animals-photos-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 368px));
+    grid-template-rows: repeat(2, minmax(300px, 426px));
+    gap: 20px 30px;
 }
 
-.animal-photo{
-    width: 360px;
-    height: 426px;
+.animal-photo-wrapper{
+    width: 368px;
+    height: 424px;
     border: 1px solid orange;
+    border-radius: 5px;
+}
+
+.animal-photo-wrapper > img {
+    width: 366px;
+    height: 362px;
+}
+
+.animal-photo-text-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+.animal-photo-icon{
+    top: 3px;
+    right: 11px;
+    position: absolute;
+}
+
+.animal-photos-circle-button{
+    margin-top: 80px;
+}
+
+.animals-photos-arrows-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.animal-photos-arrow-left{
+    position: absolute;
+    top: 400px;
+    left: -82px;
+    background-image: url(../../assets/icons/arrow-left.svg);
+    width: 62px;
+    height: 62px;
+}
+
+.animal-photos-arrow-left:active{
+    background-image: url(../../assets/icons/arrow-left-active.svg);
+}
+
+.animal-photos-arrow-right{
+    position: absolute;
+    top: 400px;
+    right: -80px;
+    background-image: url(../../assets/icons/arrow-right.svg);
+    width: 62px;
+    height: 62px;
+}
+
+.animal-photos-arrow-right:active{
+    background-image: url(../../assets/icons/arrow-right-active.svg);
 }
