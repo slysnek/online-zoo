@@ -382,6 +382,11 @@ input[type="number"]{
     padding-top: 50px;
 }
 
+.donate-money:hover{
+    color: #E47209;
+    cursor:pointer;
+}
+
 .donate-money:checked{
     color: var(--simple-orange);
 }
