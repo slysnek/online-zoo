@@ -60,6 +60,10 @@ header{
 }
 
 .header-logo-text{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 106.5px;
+    line-height: 80px;
     color: white;
     font-weight: 400;
     font-size: 19px;
@@ -326,6 +330,10 @@ input[type="radio"]{
     z-index: 5;
     right: -40px;
     bottom: -40px;
+}
+
+.pseudo-inner-circle-2:hover{
+    cursor: pointer;
 }
 
 input[type="radio"]:checked{

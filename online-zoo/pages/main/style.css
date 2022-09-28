@@ -118,6 +118,10 @@ nav{
 }
 
 .watch-online-slogan{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 106.5px;
+    line-height: 80px;
     top: 85px;
     right: 220px;
     position: absolute;
