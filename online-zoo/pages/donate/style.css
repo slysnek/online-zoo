@@ -166,10 +166,12 @@ nav{
 .pick-and-feed > h3{
     align-self: flex-start;
     width: 105%;
+    color: white;
 }
 
 .pick-and-feed > p {
     align-self: flex-start;
+    color: white;
 }
 
 .donation-information{

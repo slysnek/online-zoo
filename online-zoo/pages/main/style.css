@@ -505,6 +505,7 @@ nav{
     background: #FE9013;
     cursor: pointer;
     transition: 0.2s;
+    border-radius: 5px;
 }
 
 .testimonials-slider-bar-fill:hover{
