@@ -491,8 +491,20 @@ nav{
 
 }
 
-.testimonials-slider-bar{
+.testimonials-slider-bar-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 19px;
+    background: var(--pink-gradient);
+    width: 601px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.testimonials-slider-bar{
+    display: flex;
+    align-items: center;
     width: 599px;
     height: 8px;
     background: #F5F7F6;

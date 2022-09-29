@@ -177,7 +177,7 @@ nav{
 .donation-information{
     margin-top: 54px;
     margin-bottom: 60px;
-    color: #FE9013;
+    color: #FE9013 !important;
 }
 
 .pick-and-feed-card{
