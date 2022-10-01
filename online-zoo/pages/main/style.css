@@ -698,3 +698,9 @@ footer{
     line-height: 167%;
     font-weight: 100;
 }
+
+@media screen and (max-width: 1599px) {
+    body{
+
+    }
+}
