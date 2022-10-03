@@ -933,6 +933,7 @@ footer{
     }
 
     .header-logo{
+        border: none;
         width: 47px;
         height: 29px;
     }
@@ -942,10 +943,10 @@ footer{
     }
 
     .logo-bamboo{
-        width: 4.5px;
-        height: 13.5px;
-        bottom: 3px;
-        left: 3px;
+        width: 5px;
+        height: 14px;
+        bottom: 4px;
+        left: 6px;
     }
 
     nav{
@@ -1211,6 +1212,7 @@ footer{
     footer .header-logo{
         width: 82px;
         height: 52px;
+        border: 1px solid white;
     }
 
     footer .header-logo-text{
@@ -1220,8 +1222,8 @@ footer{
     footer .logo-bamboo{
         width: initial;
         height: initial;
-        bottom: 6px;
-        left: 9px;
+        bottom: 9px;
+        left: 12px;
     }
 
     .footer-right{

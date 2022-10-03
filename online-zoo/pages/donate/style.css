@@ -104,6 +104,10 @@ nav{
     gap: 58px;
 }
 
+.burger-menu{
+    display: none;
+}
+
 .donate-navbar{
     color: #F9804B;
 }
@@ -746,6 +750,234 @@ footer{
 
     .designed-by-footer{
         margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:999px) {
+    main{
+        overflow: hidden;
+    }
+
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 34px;
+    }
+
+    .header-logo{
+        width: 47px;
+        height: 29px;
+        border: none;
+    }
+
+    .header-logo-text{
+        font-size: 12px;
+    }
+
+    .logo-bamboo{
+        width: 5px;
+        height: 14px;
+        bottom: 3px;
+        left: 6px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .designed-by{
+        display: none;
+    }
+
+    .burger-menu{
+        display: initial;
+    }
+
+    .watch-online{
+        height: 335px;
+        bottom: 0px;
+        width: 107%;
+        transform: translateX(-39px);
+    }
+
+    .pick-and-feed{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 46px;
+    }
+
+    .pick-and-feed > h3{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        width: 100%;
+    }
+
+    .pick-and-feed > p{
+        margin-top: 20px;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .donation-information{
+        font-weight: 400 !important;
+        font-size: 36px !important;
+        line-height: 130% !important;
+        margin-top: 29px;
+        margin-bottom: 29px;
+    }
+
+    .pick-and-feed-card{
+        padding-top: 29px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pick-and-feed-card > p.subtitle {
+        margin-top: 22px;
+        margin-bottom: 31px;
+        text-align: center;
+        padding-right: 35px;
+    }
+
+    .panda-wrapper {
+        margin-left: 4px;
+    }
+
+    .amount {
+        margin-left: 10px;
+        margin-top: 41px;
+    }
+
+    .pseudo-circle:nth-of-type(3), .pseudo-circle:nth-of-type(4){
+        display: none;
+    }
+
+    .donate-money-wrapper:nth-of-type(2), .donate-money-wrapper:nth-of-type(3){
+        display: none;
+    }
+
+    .donate-selector-body {
+        margin-top: 6px;
+        margin-left: 0px;
+        padding-left: 36px;
+        padding-right: 35px;
+    }
+
+    .donate-line{
+        width: calc(100% - 77px);
+    }
+
+    .donate-selector-money{
+        width: 87%;
+        margin-right: 53px;
+    }
+
+    input[type="number"] {
+        margin-top: 62px;
+        margin-left: -11px;
+        width: 180px;
+        height: 42px;
+        padding: 16px 5px;
+    }
+
+    .dollar {
+        right: 10px;
+        bottom: 11px;
+    }
+
+    .radio-buttons-wrapper {
+        margin-top: 31px;
+        gap: 72px;
+        margin-left: 7px;
+    }
+
+    .radio-buttons{
+        align-items: center;
+        margin-left: -30px;
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    .radio-buttons input{
+        margin-right: 14px;
+        margin-left: 5px;
+    }
+
+    .donate-form{
+        width: 100%;
+        align-items: center;
+    }    
+
+    .donate-button{
+        margin-left: 2px;
+        margin-top: 29px;
+    }
+
+    .share-with-friends {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 282px;
+    }
+
+    footer .header-logo{
+        width: 82px;
+        height: 52px;
+        border: 1px solid white;
+    }
+
+    footer .header-logo-text{
+        font-size: 19px;
+    }
+
+    footer .logo-bamboo{
+        width: initial;
+        height: initial;
+        bottom: 8px;
+        left: 12px;
+    }
+
+    .footer-right{
+        justify-content: flex-end;
+    }
+
+    .socials-wrapper{
+        position: absolute;
+        right: 20px;
+        top: -34px;
+        gap: 20px;
+    }
+
+    .socials-item p {
+        display: none;
+    }
+
+    .subscribe-wrapper{
+        display: none;
+    }
+
+    .footer-button{
+        margin-top: 33px;
+    }
+
+    .footer-center{
+        position: absolute;
+        bottom: 11px;
+        left: 22px;
+        margin-left: 0px;
+    }    
+
+    .footer-navbar {
+        margin-left: 0px;
+        gap: 36px;
     }
 
 }
