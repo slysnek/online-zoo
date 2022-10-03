@@ -922,6 +922,10 @@ footer{
 
 /*999px*/
 @media screen and (max-width:999px) {
+    main{
+        overflow: hidden;
+    }
+
     header{
         padding-left: 20px;
         padding-right: 20px;
