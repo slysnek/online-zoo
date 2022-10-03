@@ -804,4 +804,43 @@ footer{
         height: 180px;
         right:0;
     }
+
+    .pick-and-feed{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .pick-and-feed-card {
+        padding-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        height: 796px;
+    }
+
+    .pick-and-feed-card > p.subtitle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 106%;
+    }
+
+    .pick-and-feed-card > p.body-button {
+        width: 94%;
+        margin-bottom: 7px;
+    }
+
+    .pick-and-feed-card-sup-fund {
+        width: 102%;
+    }
+
+    .pick-and-feed-card > h3 {
+        margin-top: 42px;
+        margin-bottom: 35px;
+    }
+
+    .how-it-works-button {
+        margin-top: 72px;
+    }
 }
