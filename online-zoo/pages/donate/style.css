@@ -981,3 +981,229 @@ footer{
     }
 
 }
+
+@media screen and (max-width: 767px) {
+    header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .watch-online{
+        height: 187px;
+        bottom: 0px;
+        width: 108%;
+        transform: translateX(0px);
+    }
+
+    .pick-and-feed {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 23px;
+    }
+
+    .pick-and-feed > p{
+        line-height: 138%;
+    }
+
+    .donation-information{
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        line-height: 120% !important;
+    }
+
+    .pick-and-feed-card {
+        padding-top: 24px;
+        height: 591px;
+        padding-bottom: 0px;
+    }
+    .pick-and-feed-card > h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .pick-and-feed-card > p.subtitle{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        width: 112%;
+        margin-top: 8px;
+    }
+
+    .panda-text-wrapper > span {
+        font-weight: 500;
+        font-size: 41px;
+        line-height: 80%;
+    }
+
+    .panda-text-wrapper > p {
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 140%;
+        margin-top: 5px;
+        width: 95px;
+    }
+
+    .panda-text-wrapper{
+        margin-top: 48px;
+    }
+
+    .panda-wrapper{
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: -4px;
+    }
+
+    .panda{
+        right: -77px;
+        bottom: -29px;
+        position: absolute;
+        width: 286px;
+        height: 139px;
+    }
+
+    .x-icon{
+        position: absolute;
+        left: 98px;
+        top: 23px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .amount {
+        margin-left: 0px;
+        margin-top: 33px;
+    }
+
+    .donate-selector-body{
+        height: 13.5px;
+        padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 7px;
+    }
+
+    .donate-line {
+        width: calc(100% - 35px);
+        top: 6px;
+    }
+
+    .donate-money{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 140%;
+        bottom: -26px;
+    }
+
+    .donate-selector-money {
+        width: 87%;
+        margin-right: 24px;
+    }
+
+    .pseudo-circle > input[type="radio"] {
+        width: 5px;
+        height: 5px;
+    }
+
+    .pseudo-inner-circles-wrapper{
+        top:0;
+        right: 0;
+    }
+
+    .pseudo-inner-circle{
+        top: -5px;
+        left: -8px;
+        width: 11px;
+        height: 11px;
+        border: 1px solid #FE9013;
+    }
+
+    .pseudo-inner-circle-2{
+        right: -8px;
+        bottom: -11px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #FE9013;
+    }
+
+    .input-wrapper {
+        margin-right: -11px;
+        margin-top: -12px;
+    }
+
+    .radio-buttons-wrapper {
+        margin-top: 25px;
+        gap: 68px;
+        margin-left: 5px;
+    }
+
+    .donate-button {
+        margin-top: 26px;
+    }
+
+    .share-with-friends {
+        width: 101%;
+    }
+
+
+    
+    footer{
+        height: 334px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+    }
+
+    .footer-left{
+        align-items: center;
+    }
+
+    footer .header-logo{
+        width: 128px;
+        height: 23px;
+        border: none;
+    }
+
+    footer .logo-bamboo{
+        bottom: 6px;
+        left: 71px;
+    }
+
+    .footer-button {
+        margin-top: 30px;
+        order: 3;
+    }
+
+    .socials-wrapper{
+        margin-top: 30px;
+        flex-direction: row;
+        position: initial;
+        order: 2;
+        gap: 30px;
+    }
+
+    .footer-center {
+        bottom: 19px;
+        margin-right: 0px;
+    }
+
+    .footer-navbar {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .designed-by-footer {
+        margin-top: 25px;
+        margin-right: 81px;
+    }
+
+    .designed-by-footer-text{
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 200%;
+    }
+}
