@@ -1373,4 +1373,75 @@ footer{
         right: -32px;
         bottom: -6px;
     }
+
+    .pick-and-feed{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pick-and-feed-card{
+        padding-top: 21px;
+        padding-left: 8px;
+        padding-right: 8px;
+        height: 1042px;
+    }
+
+    .pick-and-feed-card > h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .pick-and-feed-card > p.subtitle{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 10px;
+        width: 99%;
+    }
+
+    .pick-and-feed-card > p.body-button{
+        display: none;
+    }
+
+    .pick-and-feed-card-sup-fund{
+        display: none;
+    }
+
+    .pick-and-feed-card > h3{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    .how-it-works-wrapper{
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .how-it-works-item{
+        gap: 10px;
+    }
+
+    .how-it-works-item:nth-of-type(5){
+        margin-top: -11px;
+    }
+
+    .how-it-works-button {
+        margin-top: 39px;
+    }
+
+    .how-it-works-arrow{
+        transform: rotate(90deg);
+        top: 133px;
+        left: 137px;
+    }
+
+    .how-it-works-arrow-right{
+        top: 382px;
+    }
 }
