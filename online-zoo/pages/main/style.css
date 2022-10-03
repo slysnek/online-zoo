@@ -980,4 +980,42 @@ footer{
         bottom: 40px;
         right: 322px;
     }
+
+    .backstage{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 36px;
+    }
+
+    .man-bamboo-image{
+        display: none;
+    }
+
+    .backstage-flower-photo{
+        display: initial;
+        width: 159px;
+        height: 484px;
+        right: -28px;
+        top: -76px;
+    }
+
+    .backstage-text {
+        width: 490px;;
+        height: 367px;
+        position: relative;
+        top: -10px;
+        gap: 29px;
+    }
+
+    .backstage-text-1 > h2{
+        margin-left: 5px;
+    }
+
+    .backstage-text-2{
+        gap: 19px;
+    }
+
+    .backstage-text-2 > .subtitle{
+        margin-left: 5px;
+    }
 }
