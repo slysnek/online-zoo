@@ -104,6 +104,10 @@ nav{
     color: var(--simple-orange);
 }
 
+.burger-menu{
+    display: none;
+}
+
 .designed-by{
     color: white;
 }
@@ -911,5 +915,42 @@ footer{
 
     .designed-by-footer{
         margin-right: 5px;
+    }
+}
+
+/*999px*/
+@media screen and (max-width:999px) {
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 34px;
+    }
+
+    .header-logo{
+        width: 47px;
+        height: 29px;
+    }
+
+    .header-logo-text{
+        font-size: 12px;
+    }
+
+    .logo-bamboo{
+        width: 4.5px;
+        height: 13.5px;
+        bottom: 3px;
+        left: 3px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .designed-by{
+        display: none;
+    }
+
+    .burger-menu{
+        display: initial;
     }
 }
