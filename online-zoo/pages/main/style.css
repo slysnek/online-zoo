@@ -1480,4 +1480,64 @@ footer{
         right: -14px;
         transform: rotate(-19deg);
     }
+
+    footer{
+        height: 334px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+    }
+
+    .footer-left{
+        align-items: center;
+    }
+
+    footer .header-logo{
+        width: 128px;
+        height: 23px;
+        border: none;
+    }
+
+    footer .logo-bamboo{
+        bottom: 6px;
+        left: 71px;
+    }
+
+    .footer-button {
+        margin-top: 30px;
+        order: 3;
+    }
+
+    .socials-wrapper{
+        margin-top: 30px;
+        flex-direction: row;
+        position: initial;
+        order: 2;
+        gap: 30px;
+    }
+
+    .footer-center {
+        bottom: 19px;
+        margin-right: 0px;
+    }
+
+    .footer-navbar {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .designed-by-footer {
+        margin-top: 25px;
+        margin-right: 81px;
+    }
+
+    .designed-by-footer-text{
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 200%;
+    }
 }
