@@ -628,3 +628,124 @@ footer{
     line-height: 167%;
     font-weight: 100;
 }
+
+@media screen and (max-width: 1599px) {
+    header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar{
+        gap: 48px;
+    }
+
+    .watch-online{
+        height: 390px;
+        z-index: -1;
+        bottom: 0px;
+        background-image: url(../../assets/images/big_panda.png);
+        background-position: bottom;
+    }
+
+    .pick-and-feed{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pick-and-feed > h3 {
+        width: 90%;
+    }
+
+    .pick-and-feed > p {
+        margin-top: 30px;
+        width: 99%;
+    }
+
+    .donation-information {
+        margin-top: 47px;
+        margin-bottom: 38px;
+    }
+
+    .pick-and-feed-card{
+        height: 918px;
+        padding-top: 22px;
+        padding-left: 48px;
+        padding-right: 60px;
+        padding-bottom: 30px;
+    }
+
+    .pick-and-feed-card > p.subtitle {
+        margin-top: 11px;
+    }
+
+    .panda-wrapper{
+        margin-left: 12px;
+    }
+
+    .amount{
+        margin-left: 17px;
+        margin-top: 47px;
+    }
+
+    .donate-selector-body {
+        margin-left: 17px;
+        padding-left: 10px;
+        padding-right: 12px;
+    }
+
+    .pseudo-circle:nth-of-type(2){
+        display: none;
+    }
+
+    .donate-money-wrapper:nth-of-type(1){
+        display: none;
+    }
+
+    .donate-selector-money{
+        width: 94%;
+        margin-right: 25px;
+    }
+
+    .input-wrapper{
+        margin-right: -11px;
+        margin-top: 35px;
+    }
+
+    .donate-button{
+        margin-left: 16px;
+    }
+
+    .share-with-friends{
+        margin-left: 16px;
+    }
+
+
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+    }
+
+    .footer-center{
+        position: absolute;
+        bottom: 50px;
+        left: 323px;
+        margin-left: 0px;
+    }
+
+    .footer-navbar {
+        margin-left: 10px;
+        align-items: flex-end;
+        gap: 48px;
+    }
+
+    .subscribe-wrapper{
+        margin-right: 34px;
+    }
+
+    .designed-by-footer{
+        margin-right: 5px;
+    }
+
+}
