@@ -227,7 +227,7 @@ nav{
 .animals-photos-flower{
     position: absolute;
     bottom: 0px;
-    left: 0px;
+    left: -588px;
 }
 
 .animals-photos-flower-2{
@@ -760,5 +760,48 @@ footer{
         height: 427px;
         position: relative;
         top: -10px;
+    }
+
+    .animals-photos{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 139px;
+        margin-top: 132px;
+    }
+
+    .animal-photo-wrapper{
+        width: 296px;
+        height: 354px;
+    }
+
+    .animal-photo-wrapper > img{
+        width: 294px;
+        height: 294px;
+    }
+
+    .animal-photos-arrow-left{
+        top: 369px;
+        left: 323px;
+    }
+
+    .animal-photos-arrow-right{
+        top: 369px;
+        right: 322px;
+    }
+
+    .animal-photos-circle-button {
+        margin-top: 10px;
+    }
+    
+    .animals-photos-flower {
+        width: 387px;
+        height: 202px;
+        left: -193px;
+    }
+
+    .animals-photos-flower-2 {
+        width: 241px;
+        height: 180px;
+        right:0;
     }
 }
