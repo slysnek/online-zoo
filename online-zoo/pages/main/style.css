@@ -1094,4 +1094,61 @@ footer{
         height: 129px;
         right: 0px;
     }
+
+    .pick-and-feed{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pick-and-feed-card{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        height: 741px;
+    }
+
+    .pick-and-feed-card > h2 {
+        font-size: 42px;
+    }
+
+    .pick-and-feed-card > p.subtitle{
+        font-size: 22px;
+    }
+
+    .pick-and-feed-card > p.body-button {
+        width: 100%;
+    }
+
+    .pick-and-feed-card > h3 {
+        margin-bottom: 18px;
+        margin-top: 28px;
+    }
+
+    .how-it-works-wrapper{
+        position: relative;
+        align-self: flex-start;
+        gap: 42px;
+    }
+
+    .how-it-works-arrow{
+        position: absolute;
+        background-image: url(../../assets/icons/green-arrow.svg);
+        background-repeat: no-repeat;
+        width: 91px;
+        height: 32px;
+        top: -75px;
+        left: 137px;
+    }
+
+    .how-it-works-arrow-right{
+        top: -76px;
+        left: 345px;
+    }
+
+    .how-it-works-button {
+        margin-top: 42px;
+    }
 }
