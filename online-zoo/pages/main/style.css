@@ -1199,4 +1199,62 @@ footer{
         bottom: -69px;
         right: -7px;
     }
+
+    footer{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: 282px;
+    }
+
+    footer .header-logo{
+        width: 82px;
+        height: 52px;
+    }
+
+    footer .header-logo-text{
+        font-size: 19px;
+    }
+
+    footer .logo-bamboo{
+        width: initial;
+        height: initial;
+        bottom: 6px;
+        left: 9px;
+    }
+
+    .footer-right{
+        justify-content: flex-end;
+    }
+
+    .socials-wrapper{
+        position: absolute;
+        right: 20px;
+        top: -34px;
+        gap: 20px;
+    }
+
+    .socials-item p {
+        display: none;
+    }
+
+    .subscribe-wrapper{
+        display: none;
+    }
+
+    .footer-button{
+        margin-top: 33px;
+    }
+
+    .footer-center{
+        position: absolute;
+        bottom: 11px;
+        left: 22px;
+        margin-left: 0px;
+    }    
+
+    .footer-navbar {
+        gap: 36px;
+    }
 }
