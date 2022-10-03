@@ -699,8 +699,52 @@ footer{
     font-weight: 100;
 }
 
-@media screen and (max-width: 1599px) {
-    body{
+/*1599px*/
 
+@media screen and (max-width: 1599px) {
+    header{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar{
+        gap: 48px;
+    }
+
+    .watch-online{
+        height: 584px;
+        z-index: -1;
+        bottom: 80px;
+    }
+
+    .watch-online-slogan{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 75%;
+        top: 124px;
+        right: 36px;
+    }
+
+    .watch-online-slogan::before{
+        top: -55px;
+        right: 141px;
+        width: 367px;
+        height: 367px;
+    }
+
+    .circle-button-watch{
+        bottom: 47px;
+        right: 137px;
+    }
+
+    .backstage{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .backstage-flower-photo{
+        display: none;
     }
 }
