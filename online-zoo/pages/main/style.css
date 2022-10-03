@@ -253,6 +253,7 @@ nav{
     height: 424px;
     border: 1px solid orange;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .animal-photo-wrapper > img {
@@ -1017,5 +1018,80 @@ footer{
 
     .backstage-text-2 > .subtitle{
         margin-left: 5px;
+    }
+
+    .animals-photos{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    .animals-photos-wrapper{
+        grid-template-columns: repeat(2, minmax(200px, 368px));
+        grid-template-rows: repeat(2, minmax(300px, 426px));
+        gap: 0px 30px;
+    }
+
+    .animal-photo-wrapper:nth-child(5), .animal-photo-wrapper:nth-child(6){
+        display: none;
+    }
+
+    .animal-photo-wrapper{
+        width: 287px;
+        height: 330px;
+    }
+
+    .animal-photo-wrapper > img {
+        width: 285px;
+        height: 283px;
+    }
+
+    .animal-photo-text-wrapper{
+        padding-left: 11px;
+    }
+
+    .animal-photo-text-wrapper > .body-button{
+        font-weight: 500;
+        font-size: 12.5px;
+        line-height: 125%;
+        font-style: normal;
+    }
+
+    .animal-photo-text-wrapper > .small-p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11.6901px;
+        line-height: 120%;
+    }
+
+    .animal-photo-icon{
+        transform: scale(0.9);
+        top: -3px;
+        right: 2px;
+    }
+
+    .animal-photos-arrow-right {
+        top: 343px;
+        right: 223px;
+    }
+
+    .animal-photos-arrow-left {
+        top: 343px;
+        left: 223px;
+    }
+
+    .animal-photos-circle-button {
+        margin-top: -36px;
+    }
+
+    .animals-photos-flower {
+        left: -252px;
+    }
+
+    .animals-photos-flower-2 {
+        width: 175px;
+        height: 129px;
+        right: 0px;
     }
 }
