@@ -1330,4 +1330,47 @@ footer{
         right: -37px;
         top: -76px;
     }
+
+    .animals-photos{
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .animal-photo-wrapper {
+        width: 283px;
+        height: 332px;
+    }
+
+    .animals-photos-arrows-wrapper {
+        display: none;
+    }
+
+    .animals-photos-wrapper {
+        grid-template-columns: repeat(1, minmax(200px, 285px));
+        grid-template-rows: none;
+        gap: 20px 0px;
+    }
+
+    .animal-photo-text-wrapper .body-button, .animal-photo-text-wrapper .small-p{
+        line-height: 136%;
+    }
+
+    .animal-photos-circle-button {
+        margin-top: 20px;
+    }
+
+    .animals-photos-flower {
+        width: 144px;
+        height: 73px;
+        left: -84px;
+    }
+
+    .animals-photos-flower-2 {
+        width: 117px;
+        height: 76px;
+        right: -32px;
+        bottom: -6px;
+    }
 }
