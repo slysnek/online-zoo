@@ -880,4 +880,36 @@ footer{
     .testimonials-button{
         margin-top: 52px;
     }
+
+    .testimonials-leaf-foto{
+        width: 198px;
+        height: 327px;
+        bottom: -87px;
+    }
+
+    footer{
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+    }
+
+    .footer-center{
+        position: absolute;
+        bottom: 50px;
+        left: 323px;
+        margin-left: 0px;
+    }
+
+    .footer-navbar {
+        align-items: flex-end;
+        gap: 48px;
+    }
+
+    .subscribe-wrapper{
+        margin-right: 34px;
+    }
+
+    .designed-by-footer{
+        margin-right: 5px;
+    }
 }
