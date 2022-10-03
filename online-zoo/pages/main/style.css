@@ -183,7 +183,6 @@ nav{
     padding-left: 220px;
     padding-right: 200px;
     gap: 87px;
-    flex-wrap: wrap;
 }
 
 .backstage-flower-photo{
@@ -742,9 +741,24 @@ footer{
     .backstage{
         padding-left: 30px;
         padding-right: 30px;
+        margin-top: 30px;
+        gap: 30px;
     }
 
     .backstage-flower-photo{
         display: none;
+    }
+
+    .man-bamboo-image{
+        width: 455px;
+        height: 408px;
+        object-fit: cover;
+    }
+
+    .backstage-text{
+        width: 454px;
+        height: 427px;
+        position: relative;
+        top: -10px;
     }
 }
