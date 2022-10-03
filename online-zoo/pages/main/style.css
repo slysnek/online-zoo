@@ -1260,3 +1260,43 @@ footer{
         gap: 36px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .watch-online{
+        height: 187px;
+        bottom: 0px;
+    }
+
+    .watch-online-slogan{
+        width: 130px;
+        height: 110px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 75%;
+        top: 41px;
+        right: 9px;
+    }    
+
+    .watch-online-slogan::before{
+        top: -19px;
+        right: 28px;
+        height: 119px;
+        width: 119px;
+    }
+
+    .circle-button-watch {
+        bottom: -74px;
+        right: 10px;
+    }
+
+    .backstage{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 110px;
+    }
+}
