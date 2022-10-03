@@ -843,4 +843,41 @@ footer{
     .how-it-works-button {
         margin-top: 72px;
     }
+
+    .testimonials{
+      padding: 100px 30px 140px 30px;
+    }
+
+    .testimonials-wrapper {
+        margin-top: 30px;
+    }
+    .testimonials-wrapper > .testimonials-item:nth-of-type(4){
+        display: none;
+    }
+
+    .testimonials-item{
+        width: 293px;
+    }
+
+    .testimonials-inner-item {
+        width: 289px;
+        border-radius: 19px;
+        padding: 12px 15px 17px 14px;
+    }
+
+    .testimonials-slider-bar-outer {
+        width: 392px;
+    }
+
+    .testimonials-slider-bar{
+        width: 390px;
+    }
+
+    .testimonials-slider-bar-fill {
+        width: 75px;
+    }
+
+    .testimonials-button{
+        margin-top: 52px;
+    }
 }
