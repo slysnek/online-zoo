@@ -1297,6 +1297,37 @@ footer{
     .backstage{
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 110px;
+        margin-top: 115px;
+    }
+
+    .backstage-text{
+        gap: 18px;
+    }
+
+    .backstage-text-1 {
+        gap: 8px;
+    }
+
+    .backstage-text-2{
+        gap: 8px;
+    }
+
+    .backstage-text-2 > .subtitle {
+        margin-left: 2px;
+    }
+
+    .backstage-text-1 > h2{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-left: 0;
+    }
+
+    .backstage-flower-photo {
+        display: initial;
+        width: 68px;
+        height: 218px;
+        right: -37px;
+        top: -76px;
     }
 }
