@@ -745,6 +745,7 @@ footer{
     }
 
     .backstage{
+        justify-content: center;
         padding-left: 30px;
         padding-right: 30px;
         margin-top: 30px;
@@ -988,6 +989,7 @@ footer{
     }
 
     .backstage{
+        justify-content: flex-start;
         padding-left: 20px;
         padding-right: 20px;
         margin-top: 36px;
@@ -1033,7 +1035,7 @@ footer{
     }
 
     .animals-photos-wrapper{
-        grid-template-columns: repeat(2, minmax(200px, 368px));
+        grid-template-columns: repeat(2, minmax(200px, 283px));
         grid-template-rows: repeat(2, minmax(300px, 426px));
         gap: 0px 30px;
     }
@@ -1134,7 +1136,7 @@ footer{
 
     .how-it-works-wrapper{
         position: relative;
-        align-self: flex-start;
+        align-self: center;
         gap: 42px;
     }
 
@@ -1531,8 +1533,9 @@ footer{
     }
 
     .designed-by-footer {
-        margin-top: 25px;
-        margin-right: 81px;
+        position: absolute;
+        right: 8px;
+        bottom: 66px;
     }
 
     .designed-by-footer-text{
