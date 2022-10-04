@@ -760,6 +760,7 @@ footer{
     }
 
     header{
+        position: fixed;
         padding-left: 20px;
         padding-right: 20px;
         height: 34px;
@@ -795,6 +796,7 @@ footer{
     }
 
     .watch-online{
+        margin-top: 34px;
         height: 335px;
         bottom: 0px;
         width: 107%;
@@ -804,7 +806,7 @@ footer{
     .pick-and-feed{
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 30px;
+        padding-top: 32px;
         padding-bottom: 46px;
     }
 
