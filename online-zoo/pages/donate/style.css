@@ -1046,38 +1046,44 @@ footer{
         line-height: 140%;
         margin-top: 5px;
         width: 95px;
+        margin-left: 3px;
     }
 
     .panda-text-wrapper{
-        margin-top: 48px;
+        margin-top: -21px;
+        margin-left: 12px;
     }
 
     .panda-wrapper{
+        justify-content: center;
         position: relative;
         width: 100%;
         margin-top: 0px;
         margin-left: -4px;
+        height: 160px;
     }
 
     .panda{
+        margin-bottom: 64px;
         right: -77px;
         bottom: -29px;
-        position: absolute;
-        width: 286px;
+        width: 164px;
         height: 139px;
     }
 
     .x-icon{
-        position: absolute;
         left: 33%;
         top: 23px;
         width: 8px;
         height: 8px;
+        margin-right: 36px;
+        margin-top: 0;
+        margin-bottom: 52px;
     }
 
     .amount {
         margin-left: 0px;
-        margin-top: 33px;
+        margin-top: -38px;
     }
 
     .donate-selector-body{
@@ -1207,8 +1213,11 @@ footer{
     }
 
     .designed-by-footer {
-        margin-top: 25px;
-        margin-right: 81px;
+        position: absolute;
+        right: 8px;
+        bottom: 66px;
+        margin-top: 0px;
+        margin-right: 0px;
     }
 
     .designed-by-footer-text{
