@@ -928,6 +928,7 @@ footer{
     }
 
     header{
+        z-index: 2;
         position: fixed;
         padding-left: 20px;
         padding-right: 20px;

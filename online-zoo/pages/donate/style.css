@@ -761,6 +761,7 @@ footer{
 
     header{
         position: fixed;
+        z-index: 2;
         padding-left: 20px;
         padding-right: 20px;
         height: 34px;
