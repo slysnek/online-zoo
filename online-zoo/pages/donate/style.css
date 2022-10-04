@@ -982,7 +982,7 @@ footer{
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 639px) {
     header{
         padding-left: 10px;
         padding-right: 10px;
@@ -1065,7 +1065,7 @@ footer{
 
     .x-icon{
         position: absolute;
-        left: 98px;
+        left: 33%;
         top: 23px;
         width: 8px;
         height: 8px;
@@ -1142,7 +1142,13 @@ footer{
     }
 
     .share-with-friends {
-        width: 101%;
+        align-self: center;
+    }
+
+    @media screen and (max-width: 321px) {
+        .share-with-friends{
+            width: 101%;
+        }
     }
 
 

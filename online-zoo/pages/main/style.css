@@ -1261,7 +1261,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 639px) {
     header{
         padding-left: 10px;
         padding-right: 10px;
