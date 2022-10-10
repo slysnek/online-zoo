@@ -134,14 +134,14 @@ const testItems = document.querySelectorAll('.testimonials-item')
 
 bar.addEventListener('input', () => {
     for (const item of testItems) {
-        if(window.innerWidth > 1000 && window.innerWidth < 1300){
-            item.style.right = `${bar.value*296}px`
-        }
-        if(window.innerWidth > 1300){
-            item.style.right = `${bar.value*318}px`
-        }
         if(window.innerWidth <= 1000){
             item.style.right = `${bar.value*364}px`
+        }
+        if(window.innerWidth > 1000 && window.innerWidth < 1300){
+            item.style.right = `${bar.value*322}px`
+        }
+        if(window.innerWidth > 1300){
+            item.style.right = `${bar.value*296}px`
         }
     }
 })
@@ -151,4 +151,18 @@ window.addEventListener('resize', () => {
     for (const item of testItems) {
             item.style.right = `${bar.value*0}px`
         }
+})
+
+/*testimonials pop-up*/
+window.addEventListener('resize', () => {
+    if(window.innerWidth < 1000){
+        for (let i = 3; i < 11; i++) {
+            testItems[i].style.display = `none`
+        }
+    }
+    if(window.innerWidth >= 1000){
+        for (let i = 3; i < 11; i++) {
+            testItems[i].style.display = `initial`
+        }
+    }
 })
