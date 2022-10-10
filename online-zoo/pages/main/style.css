@@ -246,6 +246,7 @@ nav{
     padding-left: 220px;
     padding-right: 220px;
     padding-bottom: 98px;
+    overflow: hidden;
 }
 
 .animals-photos-flower{
@@ -267,14 +268,13 @@ nav{
     grid-template-columns: repeat(3, minmax(200px, 368px));
     grid-template-rows: repeat(2, minmax(300px, 426px));
     gap: 20px 30px;
-    transition: 1s;
+    transition: all 0.5s;
 }
 
 .animal-photos-slider{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
 }
 
 .animal-photo-wrapper{
@@ -329,6 +329,7 @@ nav{
 .animals-photos-arrows-wrapper{
     position: relative;
     width: 100%;
+    z-index: 2;
 }
 
 .animal-photos-arrow-left{
@@ -1653,18 +1654,21 @@ footer{
     display: none;
 }
 
-.visibility-on{
-    visibility:visible;
+.opacity-on{
+    opacity: 1;
 }
 
-.visibility-off{
-    visibility:hidden;
+.opacity-off{
+    opacity: 0;
 }
+
 
 .slider-toggle-left{
-    transform: translateX(-200%);
+    transform: translateX(-150%);
+    opacity: 0;
 }
 
 .slider-toggle-right{
+    opacity: 0;
     transform: translateX(200%);
 }

@@ -87,14 +87,14 @@ const rightArrow = document.querySelector('.animal-photos-arrow-right')
 const images = document.querySelectorAll('.animal-photo-wrapper')
 
 leftArrow.addEventListener('click', () => {
-    changeImages('left')
+    changeImages('200%', '-200%')
 })
 
 rightArrow.addEventListener('click', () => {
-        changeImages('right')
-    })
+        changeImages('-200%', '200%')
+})
 
-function changeImages(direction){
+function changeImages(direction, opposite){
     let imagesPull = [];
     while(imagesPull.length < 6){
         let image = images[Math.floor(Math.random() * images.length)];
@@ -105,16 +105,24 @@ function changeImages(direction){
         }
     }
     const sliderClone = slider.cloneNode(true)
-    slider.classList.toggle(`slider-toggle-${direction}`)
-    setTimeout(() => {
+    /* slider.classList.toggle(`slider-toggle-${direction}`) */
+    slider.style.transform = `translate(${direction})`
+    setTimeout(()=> {
         wrapper.removeChild(slider)
-        wrapper.appendChild(sliderClone)
+        /* sliderClone.classList.toggle(`slider-toggle-${opposite}`) */
+        sliderClone.style.transform = `translate(${opposite})`
+        sliderClone.style.visibility = `hidden`;
         sliderClone.innerHTML = ''
         for(let i = 0; i < 6; i++){
             sliderClone.appendChild(imagesPull[i])
         }
+        wrapper.appendChild(sliderClone)
+        setTimeout(()=> {
+            /* sliderClone.classList.toggle(`slider-toggle-${opposite}`) */
+            sliderClone.style.transform = 'translate(0)'
+            sliderClone.style.visibility = `visible`;
+        },500) 
         slider = sliderClone;
-    }, 500)
-
+    }, 100)
 
 }
