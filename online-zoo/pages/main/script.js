@@ -133,12 +133,22 @@ const testWrapper = document.querySelector('.testimonials-wrapper')
 const testItems = document.querySelectorAll('.testimonials-item')
 
 bar.addEventListener('input', () => {
-    for (const item in testItems) {
-        if(window.innerWidth > 1000){
-            testItems[item].style.right = `${bar.value*296}px`
+    for (const item of testItems) {
+        if(window.innerWidth > 1000 && window.innerWidth < 1300){
+            item.style.right = `${bar.value*296}px`
+        }
+        if(window.innerWidth > 1300){
+            item.style.right = `${bar.value*318}px`
         }
         if(window.innerWidth <= 1000){
-            testItems[item].style.right = `${bar.value*364}px`
+            item.style.right = `${bar.value*364}px`
         }
     }
+})
+
+window.addEventListener('resize', () => {
+    bar.value = 0;
+    for (const item of testItems) {
+            item.style.right = `${bar.value*0}px`
+        }
 })
