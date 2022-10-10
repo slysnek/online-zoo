@@ -252,12 +252,14 @@ nav{
     position: absolute;
     bottom: 0px;
     left: -588px;
+    z-index: 2;
 }
 
 .animals-photos-flower-2{
     position: absolute;
     bottom: 0px;
     right: 0px;
+    z-index: 2;
 }
 
 .animals-photos-wrapper{
@@ -265,6 +267,14 @@ nav{
     grid-template-columns: repeat(3, minmax(200px, 368px));
     grid-template-rows: repeat(2, minmax(300px, 426px));
     gap: 20px 30px;
+    transition: 1s;
+}
+
+.animal-photos-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .animal-photo-wrapper{
@@ -279,7 +289,6 @@ nav{
     width: 366px;
     height: 362px;
     z-index: 5;
-    transition: transform 0.3s;
 }
 
 .animal-photo-wrapper > img:hover{
@@ -1642,4 +1651,20 @@ footer{
 
 .hidden{
     display: none;
+}
+
+.visibility-on{
+    visibility:visible;
+}
+
+.visibility-off{
+    visibility:hidden;
+}
+
+.slider-toggle-left{
+    transform: translateX(-200%);
+}
+
+.slider-toggle-right{
+    transform: translateX(200%);
 }

@@ -78,3 +78,43 @@ window.addEventListener('resize', ()=> {
         toggle = false
     }
 })
+
+/*slider*/
+const wrapper = document.querySelector('.animal-photos-slider')
+let slider = document.querySelector('.animals-photos-wrapper');
+const leftArrow = document.querySelector('.animal-photos-arrow-left')
+const rightArrow = document.querySelector('.animal-photos-arrow-right')
+const images = document.querySelectorAll('.animal-photo-wrapper')
+
+leftArrow.addEventListener('click', () => {
+    changeImages('left')
+})
+
+rightArrow.addEventListener('click', () => {
+        changeImages('right')
+    })
+
+function changeImages(direction){
+    let imagesPull = [];
+    while(imagesPull.length < 6){
+        let image = images[Math.floor(Math.random() * images.length)];
+        if(imagesPull.length < images.length){
+            if(!imagesPull.includes(image)){
+                imagesPull.push(image)
+            }
+        }
+    }
+    const sliderClone = slider.cloneNode(true)
+    slider.classList.toggle(`slider-toggle-${direction}`)
+    setTimeout(() => {
+        wrapper.removeChild(slider)
+        wrapper.appendChild(sliderClone)
+        sliderClone.innerHTML = ''
+        for(let i = 0; i < 6; i++){
+            sliderClone.appendChild(imagesPull[i])
+        }
+        slider = sliderClone;
+    }, 500)
+
+
+}
