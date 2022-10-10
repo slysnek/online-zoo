@@ -124,5 +124,6 @@ function changeImages(direction, opposite){
         },500) 
         slider = sliderClone;
     }, 200)
-
 }
+
+/*testimonials-slider*/
