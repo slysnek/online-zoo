@@ -123,6 +123,6 @@ function changeImages(direction, opposite){
             sliderClone.style.visibility = `visible`;
         },500) 
         slider = sliderClone;
-    }, 100)
+    }, 200)
 
 }
