@@ -127,3 +127,18 @@ function changeImages(direction, opposite){
 }
 
 /*testimonials-slider*/
+
+const bar = document.querySelector('.testimonials-slider-bar')
+const testWrapper = document.querySelector('.testimonials-wrapper')
+const testItems = document.querySelectorAll('.testimonials-item')
+
+bar.addEventListener('input', () => {
+    for (const item in testItems) {
+        if(window.innerWidth > 1000){
+            testItems[item].style.right = `${bar.value*296}px`
+        }
+        if(window.innerWidth <= 1000){
+            testItems[item].style.right = `${bar.value*364}px`
+        }
+    }
+})

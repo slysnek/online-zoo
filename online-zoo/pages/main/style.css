@@ -479,6 +479,8 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 29px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .testimonials-item{
@@ -491,6 +493,8 @@ nav{
     flex-direction: column;
     background: var(--pink-gradient);
     border-radius: 20px;
+    position: relative;
+    transition: 0.5s;
 }
 
 .testimonials-inner-item{
@@ -911,9 +915,6 @@ footer{
 
     .testimonials-wrapper {
         margin-top: 30px;
-    }
-    .testimonials-wrapper > .testimonials-item:nth-of-type(4){
-        display: none;
     }
 
     .testimonials-item{
