@@ -86,15 +86,16 @@ const leftArrow = document.querySelector('.animal-photos-arrow-left')
 const rightArrow = document.querySelector('.animal-photos-arrow-right')
 const images = document.querySelectorAll('.animal-photo-wrapper')
 
-leftArrow.addEventListener('click', () => {
-    changeImages('200%', '-200%')
-})
+leftArrow.myParam = ['200%', '-200%']
+rightArrow.myParam = ['-200%', '200%']
 
-rightArrow.addEventListener('click', () => {
-        changeImages('-200%', '200%')
-})
+leftArrow.addEventListener('click', changeImages)
+rightArrow.addEventListener('click', changeImages)
 
-function changeImages(direction, opposite){
+function changeImages(event){
+    leftArrow.removeEventListener('click', changeImages)
+    rightArrow.removeEventListener('click', changeImages)
+    let direction = event.currentTarget.myParam;
     let imagesPull = [];
     while(imagesPull.length < 6){
         let image = images[Math.floor(Math.random() * images.length)];
@@ -106,11 +107,11 @@ function changeImages(direction, opposite){
     }
     const sliderClone = slider.cloneNode(true)
     /* slider.classList.toggle(`slider-toggle-${direction}`) */
-    slider.style.transform = `translate(${direction})`
+    slider.style.transform = `translate(${direction[0]})`
     setTimeout(()=> {
         wrapper.removeChild(slider)
         /* sliderClone.classList.toggle(`slider-toggle-${opposite}`) */
-        sliderClone.style.transform = `translate(${opposite})`
+        sliderClone.style.transform = `translate(${direction[1]})`
         sliderClone.style.visibility = `hidden`;
         sliderClone.innerHTML = ''
         for(let i = 0; i < 6; i++){
@@ -121,9 +122,14 @@ function changeImages(direction, opposite){
             /* sliderClone.classList.toggle(`slider-toggle-${opposite}`) */
             sliderClone.style.transform = 'translate(0)'
             sliderClone.style.visibility = `visible`;
-        },500) 
+        },200) 
+        setTimeout(()=> {
+        leftArrow.addEventListener('click', changeImages)
+        rightArrow.addEventListener('click', changeImages)
+        }, 700)
         slider = sliderClone;
     }, 200)
+
 }
 
 /*testimonials-slider*/
