@@ -72,3 +72,31 @@ window.addEventListener('resize', ()=> {
         toggle = false
     }
 })
+
+/*amount*/
+
+const customAmount = document.querySelector('.custom-amount')
+const money = document.querySelectorAll('.donate-money')
+const circlesInput = document.querySelectorAll('.pseudo-circle input')
+
+customAmount.value = 100;
+
+for(let sum of money){
+    sum.addEventListener('click', ()=>{
+        customAmount.value = parseInt(sum.textContent.slice(1));
+    })
+}
+
+for(let circle of circlesInput){
+    circle.addEventListener('click', ()=>{
+        customAmount.value = circle.value;
+    })
+}
+
+customAmount.addEventListener('input', ()=>{
+    for(let circle of circlesInput){
+        if(customAmount.value === circle.value){
+            circle.checked = true;
+        }
+    }
+})

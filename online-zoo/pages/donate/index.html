@@ -74,56 +74,56 @@
           <div class="donate-selector-body">
             <div class="donate-line"></div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice1" />
+              <input value="5000" type="radio" name="donate" id="donateChoice1" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice2" />
+              <input value="2000" type="radio" name="donate" id="donateChoice2" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice3" />
+              <input value="1000" type="radio" name="donate" id="donateChoice3" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice4" />
+              <input value="500" type="radio" name="donate" id="donateChoice4" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice5" />
+              <input value="250" type="radio" name="donate" id="donateChoice5" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice6" />
+              <input value="100" type="radio" name="donate" checked id="donateChoice6" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" checked name="donate" id="donateChoice7" />
+              <input value="50" type="radio"  name="donate" id="donateChoice7" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
               </div>
             </div>
             <div class="pseudo-circle">
-              <input type="radio" name="donate" id="donateChoice8" />
+              <input value="25" type="radio" name="donate" id="donateChoice8" />
               <div class="pseudo-inner-circles-wrapper">
                 <div class="pseudo-inner-circle"></div>
                 <div class="pseudo-inner-circle-2"></div>
@@ -166,8 +166,9 @@
               <input
                 class="custom-amount"
                 type="number"
+                oninput="this.value=this.value.slice(0,this.maxLength)"
                 min="1"
-                max="5000"
+                maxlength="4"
                 placeholder="Another amount"
               />
             </div>
