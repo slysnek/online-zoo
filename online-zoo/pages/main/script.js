@@ -131,6 +131,7 @@ function changeImages(direction, opposite){
 const bar = document.querySelector('.testimonials-slider-bar')
 const testWrapper = document.querySelector('.testimonials-wrapper')
 const testItems = document.querySelectorAll('.testimonials-item')
+const testItemsInner = document.querySelectorAll('.testimonials-inner-item')
 
 bar.addEventListener('input', () => {
     for (const item of testItems) {
@@ -154,6 +155,14 @@ window.addEventListener('resize', () => {
 })
 
 /*testimonials pop-up*/
+window.addEventListener('load', () => {
+    if(window.innerWidth < 1000){
+        for (let i = 3; i < 11; i++) {
+            testItems[i].style.display = `none`
+        }
+    }
+})
+
 window.addEventListener('resize', () => {
     if(window.innerWidth < 1000){
         for (let i = 3; i < 11; i++) {
@@ -166,3 +175,36 @@ window.addEventListener('resize', () => {
         }
     }
 })
+
+const popUpTest = document.querySelector('.pop-up-background-test')
+const testCrosses = document.querySelectorAll('.testimonials-cross')
+
+popUpTest.addEventListener('click', () => {
+        if(window.innerWidth < 1000){
+            document.querySelector('.testimonials-pop-up').classList.remove('testimonials-pop-up')
+            document.querySelector('.testimonials-pop-up-outer').classList.remove('testimonials-pop-up-outer');
+            popUpTest.classList.toggle('visible')
+            for(const cross of testCrosses){
+                cross.classList.toggle('visible')
+            }
+        }
+    })
+
+for (const item of testItems) {
+    if(window.innerWidth < 1000){
+        item.addEventListener('click', () => {
+            popUpTest.classList.toggle('visible')
+            for(const cross of testCrosses){
+                cross.classList.toggle('visible')
+            }
+            item.classList.toggle('testimonials-pop-up-outer')
+        })
+    }
+}
+for (const item of testItemsInner) {
+    if(window.innerWidth < 1000){
+    item.addEventListener('click', () => {
+        item.classList.toggle('testimonials-pop-up')
+    })
+}
+}
